@@ -100,7 +100,7 @@ class ttkGUI:
         self.removeItems_button.place(x=0, y=90)
         self.xItems_button = ttk.Button(master=self.menu_frame, text="X Items", width=22, command=self.xI_frame)
         self.xItems_button.place(x=0, y=130)
-        self.yItems_button = ttk.Button(master=self.menu_frame, text="Log out", command=self.prevPage, width=24)
+        self.yItems_button = ttk.Button(master=self.menu_frame, text="Log out", command=self.prevPage, width=22)
         self.yItems_button.place(x=0, y=380)
 
         ### display frame
