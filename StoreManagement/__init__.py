@@ -44,13 +44,10 @@ class ttkGUI:
         self.frame2.columnconfigure((0,1,2), weight=1)
 
         ## frame 1 wigets setting
-        # img = Image.open("StoreManagement//resources//logo_350.png")
-        # photo = ImageTk.PhotoImage(img)
-        # img_label = ttk.Label(master=self.frame1, image=photo, borderwidth=2, relief="solid")
-        # img_label.place(x=10, y=10, width=370, height=370)
-
-        # testlabel = ttk.Label(master=self.frame1, background="red")
-        # testlabel.pack(expand=True, fill="both")
+        self.img = Image.open("StoreManagement//resources//inventory_login.png")
+        self.photo = ImageTk.PhotoImage(self.img)
+        self.img_label = ttk.Label(master=self.frame1, image=self.photo)
+        self.img_label.place(x=30, y=30, width=370, height=370)
 
         ## frame 2 widgets settngs
         ### login in text 
@@ -79,20 +76,13 @@ class ttkGUI:
         self.signup_text.place(x= 90, y=320)
         self.temp_signup_text = ttk.Label(master=self.frame2, text="Sign up", font=("Microsoft HaYei UI Light", 9), foreground="gray")
         self.temp_signup_text.place(x= 230, y=320)
-        # self.signup_button = ttk.Button(master=self.frame2, text="Sign up")
-        # self.signup_button.place(x=230, y=320)
         
         ### output text temp
         self.output_text = ttk.Label(master=self.frame2, text="output", font=("Microsoft HaYei UI Light", 10), textvariable=self.output_var)
         self.output_text.place(x= 140, y=360)
 
-
         # home frame settings
         self.home_frame = ttk.Frame(master=self.root)
-        # self.test_label = ttk.Label(master=self.home_frame, background="red")
-        # self.test_label.pack(expand=True, fill="both")
-        # self.test_button = ttk.Button(master=self.home_frame, text="Prev page", command=self.prevPage)
-        # self.test_button.pack()
 
         ## bar frame settings
         self.bar_frame = ttk.Frame(master=self.home_frame)
