@@ -1,12 +1,9 @@
 import tkinter as tk
-# from tkinter import ttk
 import ttkbootstrap as ttk
-import customtkinter as ctk
 from PIL import Image, ImageTk
 
 from StoreManagement.logger import log
 from StoreManagement.database import Database
-
 
 class ttkGUI:
     def __init__(self):
