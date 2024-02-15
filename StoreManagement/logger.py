@@ -1,5 +1,6 @@
 import time
 
+
 class Log:
     def __init__(self, save_to_file=False, file_name="app.log"):
         self.save_to_file = save_to_file
@@ -16,5 +17,6 @@ class Log:
         if self.save_to_file:
             with open(self.file_name, "a") as f:
                 f.write(f"[ERROR]({time.ctime(time.time())}): {msg}\n")
+
 
 log = Log(True, "StoreManagement//app.log")
